@@ -89,7 +89,7 @@ void finalScore() {
   String finalScore = str(pie);
   textSize(32);
   fill(0, 255, 0);
-  int ts = 180;
+  int ts = 175;
   int ypos = 75;
   text(green, ts+10, ypos);
   fill(255);
