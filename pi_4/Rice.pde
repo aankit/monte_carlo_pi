@@ -11,7 +11,7 @@ class Rice {
     center.set(_c);
     hdiam = 3;
     vdiam = 5;
-    r = 280*pow(random(0,1),.5);
+    r = 420*pow(random(0,1),.5);
     t = random(0,2*PI);
     pos.set(center.x+r*cos(t),center.y+r*sin(t));
     circles=0;
@@ -45,6 +45,7 @@ class Rice {
       type = 1;
     }
     else {
+      noStroke();
       fill(0,0,0);
       type = 2;
     }
