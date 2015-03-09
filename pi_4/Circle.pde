@@ -6,7 +6,7 @@ class Circle {
     c = new PVector();
     pos = new PVector();
     c.set(_c);
-    r = width/3;
+    r = height/3;
     a=0;
   }
 

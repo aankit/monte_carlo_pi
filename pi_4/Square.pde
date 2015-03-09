@@ -5,13 +5,13 @@ class Square {
   Square(PVector _c) {
     c = new PVector();
     c.set(_c);
-    s = 2*width/3+5;
+    s = 2*height/3+5;
     x=c.x-s/2;
     y=c.y-s/2;
     px=x;
     py=y;
     turn = 0;
-    t=1.35;
+    t=1.25;
     a=255;
   }
 

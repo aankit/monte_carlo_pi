@@ -2,7 +2,7 @@ float cTimer, shade, pie, speed, acc, circles, squares;
 int rCooker, rTimer, count, x, y;
 boolean once, tally;
 PVector center;
-int controller = 4000;
+int controller = 3600;
 Rice[] r = new Rice[controller];
 Circle c;
 Square s;
@@ -11,7 +11,7 @@ int scoreDisplayWait = 10000;
 int tallyCount;
 
 void setup() {
-  size(800, 800);
+  size(1280, 720);
   center = new PVector(width/2, height/2);
   rTimer = 0;
   cTimer = 0;
@@ -93,7 +93,7 @@ void finalScore() {
   String finalScore = str(pie);
   textSize(32);
   fill(0, 255, 0);
-  int ts = 175;
+  int ts = width/2 - 240;
   int ypos = 75;
   text(green, ts+10, ypos);
   fill(255);
