@@ -6,14 +6,15 @@ int controller = 4000;
 Rice[] r = new Rice[controller];
 Circle c;
 Square s;
-int scoreDisplayStart = 0;
+int scoreDisplayStart;
 int scoreDisplayWait = 10000;
-int tallyCount = 0;
+int tallyCount;
 
 void setup() {
   size(800, 800);
   center = new PVector(width/2, height/2);
   rTimer = 0;
+  cTimer = 0;
   shade = 0;
   c = new Circle(center);
   s = new Square(center);
@@ -26,6 +27,8 @@ void setup() {
   x = 0;
   y = 0;
   acc = 0.001;
+  tallyCount = 0;
+  scoreDisplayStart = 0;
 }
 
 void draw() {
@@ -72,6 +75,7 @@ void draw() {
     if(tallyCount==1){
       println("eval");
       finalScore();
+      
     } else if (millis()-scoreDisplayStart > scoreDisplayWait) {
       setup();
     } else {
